@@ -1,0 +1,14 @@
+.step-link {
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.step-number {
+  color: #000;
+  font-weight: bold;
+}
+
+.step-label {
+  color: #888;
+  font-size: 0.9rem;
+}

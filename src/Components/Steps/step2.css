@@ -1,0 +1,13 @@
+.underline-input {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .underline-input:focus {
+    border-bottom-color: #007bff;
+    box-shadow: none;
+  }
