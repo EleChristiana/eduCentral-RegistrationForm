@@ -55,20 +55,21 @@ const RegistrationForm = () => {
         <Col md={10} lg={9}>
           <Header />
           <Row className="align-items-start">
-            {/* Registration card */}
+           
             <Col md={4}>
               <div style={{ height: '350px' }}>
                 <RegistrationCard />
               </div>
             </Col>
 
-            {/* Steps */}
+           
             <Col md={8}>
+                 
               <div
                 className="shadow-lg p-4 rounded bg-white"
                 style={{ minHeight: '500px', display: 'flex', flexDirection: 'column' }}
               >
-                <StepNavigation currentStep={step} />
+                 <StepNavigation currentStep={step} /> 
                 <div className="mt-4 flex-grow-1">{renderStep()}</div>
               </div>
             </Col>

@@ -7,22 +7,24 @@ const Step2 = ({ formData, setFormData, onNext, onBack  }) => {
   return (
     <Form>
       <Row className="mb-3">
-        <Col>
+        <Row className="mb-3">
           <Form.Control
+           className="underline-input"
             type="text"
             placeholder="Street 1"
             value={formData.street1}
             onChange={(e) => setFormData({ ...formData, street1: e.target.value })}
           />
-        </Col>
-        <Col>
+        </Row>
+        <Row>
           <Form.Control
+           className="underline-input"
             type="text"
             placeholder="Street 2"
             value={formData.street2}
             onChange={(e) => setFormData({ ...formData, street2: e.target.value })}
           />
-        </Col>
+        </Row>
       </Row>
       <Row className="mb-3">
         <Col>
@@ -59,6 +61,7 @@ const Step2 = ({ formData, setFormData, onNext, onBack  }) => {
         </Col>
         <Col>
           <Form.Control
+           className="underline-input"
             type="text"
             placeholder="Zip code"
             value={formData.zip}
@@ -66,12 +69,9 @@ const Step2 = ({ formData, setFormData, onNext, onBack  }) => {
           />
         </Col>
       </Row>
-      {/* <div className="d-flex justify-content-between">
-        <Button variant="secondary" onClick={prevStep}>Previous</Button>
-        <Button onClick={nextStep}>Next</Button>
-      </div> */}
+     
 
-<div className="d-flex justify-content-between">
+      <div className=" btnn d-flex justify-content-between mb-3">
         <Button variant="secondary" onClick={onBack}>Previous</Button>
         <Button onClick={onNext}>Next</Button>
       </div>
